@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henna Harmony</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #2F4F4F;
+            background: #F0F8F5;
+        }
+        header {
+            background-color: #8FC1A9;
+            color: #FFFFFF;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.3rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #A3D9C5;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #F0F8F5;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #8FC1A9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, rgba(143, 193, 169, 0.7), rgba(143, 193, 169, 0.9)), url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #305e40;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 5rem;
+            margin: 0;
+            animation: fadeInDown 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Hero Animation */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background-color: #E6F4EF;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #8FC1A9;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: #F7FDFB;
+        }
+        .contact-form button {
+            background-color: #8FC1A9;
+            color: #FFFFFF;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #A3D9C5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #8FC1A9;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        }
+        footer a {
+            color: #DFF5EE;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #F0F8F5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Henna Harmony</h1>
+        <p>Unveiling Beauty, One Design at a Time</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Celebrate the Art of Henna</h1>
+        <p>Intricate Designs for Every Beautiful Moment</p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Welcome to Henna Harmony! I am a passionate artist dedicated to creating intricate and mesmerizing Mehendi designs that make your special moments unforgettable. With a focus on creativity and perfection, each design is crafted to tell its own unique story.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="1.jpg" alt="Mehendi Design 1">
+<img src="2.jpg"alt="Mehendi Design 2">
+<img src="3.jpg"alt="Mehendi Design 3">
+<img src="4.jpg"alt="Mehendi Design 4">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <p>From bridal Mehendi to festive and custom designs, Henna Harmony offers a range of services to suit every occasion. Let your hands and feet tell a story of elegance and artistry.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <p>"Her artistry left everyone speechless! It was an unforgettable experience." - Tanaz</p>
+        <p>"The details and creativity in her work are unmatched. Highly recommended!" - Tarheen</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+           
